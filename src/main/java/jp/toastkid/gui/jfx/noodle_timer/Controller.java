@@ -114,5 +114,6 @@ public class Controller implements Initializable {
         timer.setOnStart( ()  -> {ctrl.setText("■");});
         timer.setOnStop(  ()  -> {ctrl.setText("▶");});
         closer.setStyle("-fx-background-color: red; ");
+        ctrl.setText("▶");
     }
 }

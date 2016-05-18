@@ -5,6 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
 <?import jp.toastkid.gui.jfx.noodle_timer.*?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
@@ -20,29 +21,29 @@
                <children>
                   <HBox prefHeight="39.0" prefWidth="121.0">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="77.0" text="Reset" />
-                        <Button fx:id="closer" mnemonicParsing="false" onAction="#close" text="x" />
+                        <JFXButton mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="77.0" text="Reset" />
+                        <JFXButton fx:id="closer" mnemonicParsing="false" onAction="#close" text="x" />
                      </children>
                   </HBox>
-                  <Button fx:id="three" mnemonicParsing="false" text="3">
+                  <JFXButton fx:id="three" mnemonicParsing="false" text="3">
                      <font>
                         <Font size="42.0" />
                      </font>
-                  </Button>
-                  <Button fx:id="four" mnemonicParsing="false" text="4">
+                  </JFXButton>
+                  <JFXButton fx:id="four" mnemonicParsing="false" text="4">
                      <font>
                         <Font size="42.0" />
                      </font>
-                  </Button>
-                  <Button fx:id="five" mnemonicParsing="false" text="5">
+                  </JFXButton>
+                  <JFXButton fx:id="five" mnemonicParsing="false" text="5">
                      <font>
                         <Font size="42.0" />
                      </font>
-                  </Button>
-                  <NumberTextField fx:id="numberInput" onAction="#input" prefWidth="40.0" maxWidth="60.0" />
+                  </JFXButton>
+                  <NumberTextField fx:id="numberInput" onAction="#input" prefWidth="40.0" maxWidth="60.0" promptText="Input minutes" />
                   <HBox prefWidth="96.0">
                      <children>
-                        <Button fx:id="ctrl" mnemonicParsing="false" onAction="#play" text="▶" />
+                        <JFXButton fx:id="ctrl" mnemonicParsing="false" onAction="#play" />
                      </children>
                   </HBox>
                </children>

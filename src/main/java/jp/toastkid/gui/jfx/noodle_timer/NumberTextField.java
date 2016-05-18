@@ -1,6 +1,6 @@
 package jp.toastkid.gui.jfx.noodle_timer;
 
-import javafx.scene.control.TextField;
+import com.jfoenix.controls.JFXTextField;
 
 /**
  * 数値の入力だけを受け付ける TextField.
@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
  *what-is-the-recommended-way-to-make-a-numeric-textfield-in-javafx">
  * What is the recommended way to make a numeric TextField in JavaFX?</a>
  */
-public class NumberTextField extends TextField {
+public class NumberTextField extends JFXTextField {
 
     @Override
     public void replaceText(final int start, final int end, final String text) {

@@ -20,8 +20,14 @@ public class Main extends Application {
     /** Application title. */
     private static final String TITLE = "Noodle Timer";
 
-    /** fxml ファイル. */
+    /** fxml file. */
     private static final String FXML_PATH = "timer.fxml";
+
+    /** point of starting drag(x). */
+    private double dragStartX;
+
+    /** point of starting drag(y). */
+    private double dragStartY;
 
     /** Stage. */
     private Stage stage;
@@ -37,6 +43,16 @@ public class Main extends Application {
                 = new FXMLLoader(getClass().getClassLoader().getResource(FXML_PATH));
             final Parent load = loader.load();
             final Scene scene = new Scene(load);
+            // implement drag event.
+            scene.setOnMousePressed((event) -> {
+                dragStartX = event.getSceneX();
+                dragStartY = event.getSceneY();
+            });
+            scene.setOnMouseDragged((event) -> {
+                stage.setX(event.getScreenX() - dragStartX);
+                stage.setY(event.getScreenY() - dragStartY);
+            });
+
             stage.setScene(scene);
             ((Controller) loader.getController()).setStage(stage);
         } catch (final IOException e) {
