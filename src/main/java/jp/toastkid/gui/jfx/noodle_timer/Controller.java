@@ -23,10 +23,6 @@ public class Controller implements Initializable {
     @FXML
     private Stopwatch timer;
 
-    /** close button. */
-    @FXML
-    private Button closer;
-
     /** input 3 min. */
     @FXML
     private Button three;
@@ -72,17 +68,6 @@ public class Controller implements Initializable {
     }
 
     /**
-     * close this app.
-     */
-    @FXML
-    private void close() {
-        if (stage == null) {
-            return;
-        }
-        stage.close();
-    }
-
-    /**
      * input by textfield.
      */
     @FXML
@@ -112,7 +97,6 @@ public class Controller implements Initializable {
         four.setOnAction( eve -> {setMinutes(4L);});
         five.setOnAction( eve -> {setMinutes(5L);});
         timer.setOnStart( ()  -> {ctrl.setText("■");});
-        timer.setOnStop(  ()  -> {ctrl.setText("▶");});
-        closer.setStyle("-fx-background-color: red; ");
+        timer.setOnStop(  ()  -> {ctrl.setText("＞");});
     }
 }

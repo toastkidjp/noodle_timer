@@ -7,23 +7,18 @@
 <?import javafx.scene.layout.*?>
 <?import jp.toastkid.gui.jfx.noodle_timer.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="349.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
    <children>
-      <HBox prefHeight="332.0" prefWidth="600.0">
+      <HBox prefHeight="400.0" prefWidth="625.0">
          <children>
-            <Stopwatch fx:id="timer" isCountDown="true" prefHeight="400.0" prefWidth="525.0">
+            <Stopwatch fx:id="timer" isCountDown="true" prefHeight="400.0" prefWidth="550.0">
               <font>
                 <Font size="100.0" />
               </font>
             </Stopwatch>
-            <VBox prefHeight="400.0" prefWidth="100.0">
+            <VBox prefHeight="400.0" prefWidth="75.0">
                <children>
-                  <HBox prefHeight="39.0" prefWidth="121.0">
-                     <children>
-                        <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="77.0" text="Reset" />
-                        <Button fx:id="closer" mnemonicParsing="false" onAction="#close" text="x" />
-                     </children>
-                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="75.0" text="Reset" />
                   <Button fx:id="three" mnemonicParsing="false" text="3">
                      <font>
                         <Font size="42.0" />
@@ -42,7 +37,7 @@
                   <NumberTextField fx:id="numberInput" onAction="#input" prefWidth="40.0" maxWidth="60.0" />
                   <HBox prefWidth="96.0">
                      <children>
-                        <Button fx:id="ctrl" mnemonicParsing="false" onAction="#play" text="▶" />
+                        <Button fx:id="ctrl" mnemonicParsing="false" onAction="#play" text="＞" />
                      </children>
                   </HBox>
                </children>

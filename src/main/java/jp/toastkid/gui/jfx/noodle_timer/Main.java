@@ -12,8 +12,8 @@ import javafx.stage.StageStyle;
 
 /**
  * Noodle timer.
- * @author Toast kid
  *
+ * @author Toast kid
  */
 public class Main extends Application {
 
@@ -28,7 +28,7 @@ public class Main extends Application {
 
     @Override
     public void start(final Stage arg0) throws Exception {
-        stage = new Stage(StageStyle.TRANSPARENT);
+        stage = new Stage(StageStyle.DECORATED);
         final Image image = new Image(
                 getClass().getClassLoader().getResourceAsStream(Resource.PATH_TO_ICON));
 
@@ -43,9 +43,8 @@ public class Main extends Application {
             e.printStackTrace();
         }
 
-        stage.getIcons().add(
-                image);
-        stage.setResizable(false);
+        stage.getIcons().add(image);
+        stage.setResizable(true);
         stage.setTitle(TITLE);
         stage.show();
     }
