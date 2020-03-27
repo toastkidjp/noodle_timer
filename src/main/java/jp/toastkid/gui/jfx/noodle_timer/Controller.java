@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 /**
  * Controller.
  * @author Toast kid
- *
+ * fix : Yahiro Aki
  */
 public class Controller implements Initializable {
 

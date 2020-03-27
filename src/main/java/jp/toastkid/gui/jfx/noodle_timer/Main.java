@@ -11,9 +11,12 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 /**
- * Noodle timer.
+ * Pomodoro timer.
  *
+ * origin Noodle Timer
  * @author Toast kid
+ * fix : Yahiro Aki
+ *
  */
 public class Main extends Application {
 
