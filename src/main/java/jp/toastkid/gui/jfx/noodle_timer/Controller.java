@@ -17,7 +17,8 @@ import javafx.stage.Stage;
 public class Controller implements Initializable {
 
     /** passed parent stage. */
-    private Stage stage;
+    @SuppressWarnings("unused")
+	private Stage stage;
 
     /** timer. */
     @FXML
@@ -93,10 +94,11 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(final URL arg0, final ResourceBundle arg1) {
-        three.setOnAction(eve -> {setMinutes(3L);});
-        four.setOnAction( eve -> {setMinutes(4L);});
+        three.setOnAction(eve -> {setMinutes(25L);});
+        four.setOnAction( eve -> {setMinutes(20L);});
         five.setOnAction( eve -> {setMinutes(5L);});
         timer.setOnStart( ()  -> {ctrl.setText("■");});
         timer.setOnStop(  ()  -> {ctrl.setText("＞");});
+
     }
 }

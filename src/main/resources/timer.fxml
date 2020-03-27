@@ -7,31 +7,31 @@
 <?import javafx.scene.layout.*?>
 <?import jp.toastkid.gui.jfx.noodle_timer.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
    <children>
-      <HBox prefHeight="400.0" prefWidth="625.0">
+      <HBox prefHeight="250.0" prefWidth="525.0">
          <children>
-            <Stopwatch fx:id="timer" isCountDown="true" prefHeight="400.0" prefWidth="550.0">
+            <Stopwatch fx:id="timer" isCountDown="true" prefHeight="250.0" prefWidth="450.0">
               <font>
-                <Font size="100.0" />
+                <Font size="50.0" />
               </font>
             </Stopwatch>
             <VBox prefHeight="400.0" prefWidth="75.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="75.0" text="Reset" />
-                  <Button fx:id="three" mnemonicParsing="false" text="3">
+                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="75.0" text="リセット" />
+                  <Button fx:id="three" mnemonicParsing="false" text="25">
                      <font>
-                        <Font size="42.0" />
+                        <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="four" mnemonicParsing="false" text="4">
+                  <Button fx:id="four" mnemonicParsing="false" text="20">
                      <font>
-                        <Font size="42.0" />
+                        <Font size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="five" mnemonicParsing="false" text="5">
+                  <Button fx:id="five" mnemonicParsing="false" text="05">
                      <font>
-                        <Font size="42.0" />
+                        <Font size="20.0" />
                      </font>
                   </Button>
                   <NumberTextField fx:id="numberInput" onAction="#input" prefWidth="40.0" maxWidth="60.0" />

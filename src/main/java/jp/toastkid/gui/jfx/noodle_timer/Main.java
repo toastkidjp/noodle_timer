@@ -18,7 +18,7 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
 
     /** Application title. */
-    private static final String TITLE = "Noodle Timer";
+    private static final String TITLE = "ポモドーロ　タイマー";
 
     /** fxml ファイル. */
     private static final String FXML_PATH = "timer.fxml";
@@ -46,6 +46,9 @@ public class Main extends Application {
         stage.getIcons().add(image);
         stage.setResizable(true);
         stage.setTitle(TITLE);
+        
+    
+        
         stage.show();
     }
 
