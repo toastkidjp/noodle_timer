@@ -94,11 +94,15 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(final URL arg0, final ResourceBundle arg1) {
+        // @TODO : ボタン透明化
         three.setOnAction(eve -> {setMinutes(25L);});
         four.setOnAction( eve -> {setMinutes(20L);});
         five.setOnAction( eve -> {setMinutes(5L);});
         timer.setOnStart( ()  -> {ctrl.setText("■");});
         timer.setOnStop(  ()  -> {ctrl.setText("＞");});
 
+        //three.setStyle("-fx-background-color: transparent");
+        //four.setStyle("-fx-background-color: transparent");
+        //five.setStyle("-fx-background-color: transparent");
     }
 }

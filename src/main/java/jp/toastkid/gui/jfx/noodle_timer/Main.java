@@ -46,8 +46,10 @@ public class Main extends Application {
         stage.getIcons().add(image);
         stage.setResizable(true);
         stage.setTitle(TITLE);
-        
-    
+
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.getScene().setFill(null);
+        stage.getScene().getRoot().setStyle("-fx-background-color: transparent");
         
         stage.show();
     }
