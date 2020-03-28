@@ -7,37 +7,21 @@
 <?import javafx.scene.layout.*?>
 <?import jp.toastkid.gui.jfx.noodle_timer.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="325.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.toastkid.gui.jfx.noodle_timer.Controller">
    <children>
-      <HBox prefHeight="400.0" prefWidth="625.0">
+      <HBox prefHeight="150.0" prefWidth="325.0">
          <children>
-            <Stopwatch fx:id="timer" isCountDown="true" prefHeight="400.0" prefWidth="550.0">
-              <font>
-                <Font size="100.0" />
-              </font>
-            </Stopwatch>
-            <VBox prefHeight="400.0" prefWidth="75.0">
+            <Stopwatch style="-fx-font:normal 50 Tahoma;"  fx:id="timer" isCountDown="true" prefHeight="150.0" prefWidth="250.0" />
+            <VBox prefHeight="100.0" prefWidth="75.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="39.0" prefWidth="75.0" text="Reset" />
-                  <Button fx:id="three" mnemonicParsing="false" text="3">
-                     <font>
-                        <Font size="42.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="four" mnemonicParsing="false" text="4">
-                     <font>
-                        <Font size="42.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="five" mnemonicParsing="false" text="5">
-                     <font>
-                        <Font size="42.0" />
-                     </font>
-                  </Button>
-                  <NumberTextField fx:id="numberInput" onAction="#input" prefWidth="40.0" maxWidth="60.0" />
+                  <Button mnemonicParsing="false" onAction="#reset" prefHeight="20.0" prefWidth="75.0" text="リセット" />
+                  <Button style="-fx-font:normal 12 Tahoma;" fx:id="three" mnemonicParsing="false"  prefHeight="10.0" text="25" />
+                  <Button style="-fx-font:normal 12 Tahoma;" fx:id="four" mnemonicParsing="false" prefHeight="10.0"  text="20" />
+                  <Button style="-fx-font:normal 12 Tahoma;"  fx:id="five" mnemonicParsing="false" prefHeight="10.0" text="05" />
+                  <NumberTextField style="-fx-font:normal 10 Tahoma;"  fx:id="numberInput" onAction="#input" prefWidth="40.0" prefHeight="10.0" maxWidth="60.0"  />
                   <HBox prefWidth="96.0">
                      <children>
-                        <Button fx:id="ctrl" mnemonicParsing="false" onAction="#play" text="＞" />
+                        <Button style="-fx-font:normal 10 Tahoma;" fx:id="ctrl" mnemonicParsing="false" onAction="#play" prefHeight="10.0" text="＞" />
                      </children>
                   </HBox>
                </children>

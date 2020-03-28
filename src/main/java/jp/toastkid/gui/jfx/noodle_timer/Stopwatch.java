@@ -24,7 +24,7 @@ import javafx.util.Duration;
  * </pre>
  *
  * @author Toast kid
- *
+ * fix : Yahiro Aki
  */
 public class Stopwatch extends Label {
 
@@ -79,8 +79,8 @@ public class Stopwatch extends Label {
         reset();
         this.setStyle("-fx-font-size: 15em;");
         notifier = new Notifier.Builder().setPathToWav(Resource.PATH_TO_WAV)
-                .setTitle("時間です！")
-                .setMessage("ラーメンができました！！！！！")
+                .setTitle("TIME UP！")
+                .setMessage("お疲れさまでした")
                 .build();
     }
 

@@ -12,12 +12,13 @@ import javafx.stage.Stage;
 /**
  * Controller.
  * @author Toast kid
- *
+ * fix : Yahiro Aki
  */
 public class Controller implements Initializable {
 
     /** passed parent stage. */
-    private Stage stage;
+    @SuppressWarnings("unused")
+	private Stage stage;
 
     /** timer. */
     @FXML
@@ -93,10 +94,15 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(final URL arg0, final ResourceBundle arg1) {
-        three.setOnAction(eve -> {setMinutes(3L);});
-        four.setOnAction( eve -> {setMinutes(4L);});
+        // @TODO : ボタン透明化
+        three.setOnAction(eve -> {setMinutes(25L);});
+        four.setOnAction( eve -> {setMinutes(20L);});
         five.setOnAction( eve -> {setMinutes(5L);});
         timer.setOnStart( ()  -> {ctrl.setText("■");});
         timer.setOnStop(  ()  -> {ctrl.setText("＞");});
+
+        //three.setStyle("-fx-background-color: transparent");
+        //four.setStyle("-fx-background-color: transparent");
+        //five.setStyle("-fx-background-color: transparent");
     }
 }

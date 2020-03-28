@@ -11,14 +11,17 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 /**
- * Noodle timer.
+ * Pomodoro timer.
  *
+ * origin Noodle Timer
  * @author Toast kid
+ * fix : Yahiro Aki
+ *
  */
 public class Main extends Application {
 
     /** Application title. */
-    private static final String TITLE = "Noodle Timer";
+    private static final String TITLE = "ポモドーロ　タイマー";
 
     /** fxml ファイル. */
     private static final String FXML_PATH = "timer.fxml";
@@ -46,6 +49,11 @@ public class Main extends Application {
         stage.getIcons().add(image);
         stage.setResizable(true);
         stage.setTitle(TITLE);
+/*
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.getScene().setFill(null);
+        stage.getScene().getRoot().setStyle("-fx-background-color: transparent");
+  */
         stage.show();
     }
 
